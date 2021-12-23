@@ -1,13 +1,71 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 
-.heading__logo{
-    width: 20px;
-    background-color: pink;
+* {
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
-h1{
-    color: aqua;
+h1 {
+    font-size: 24px;
 }
 
-img{
-    width: fit-content;
+h2 {
+    font-size: 19px;
+}
+/* -- Home Page header --------------------------------*/
+.header {
+    /*border: 1px solid red; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @extend %header-margin;
+    @include header-logo;
+}
+    
+/* -- Home Page Book the menu you like ----------------*/
+.main {
+    background-color: $light-gray;
+    height: 340px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    &__loc {
+        border-top: 2px solid $dark-gray;
+        background-color: $md-gray;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+
+        #loc-icon {
+            margin-right: 15px;
+        }
+    }
+
+    &__heading {
+        margin: 40px 0;
+
+        @include desktop {
+            margin: 50px 0 40px 0;
+            font-size: 28px;
+        }
+    }
+
+    &__txt {
+        /*border: 1px solid red; */
+        margin: 0 0 30px 0;
+        font-size: $font-size;
+        font-weight: 250;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+.btn {
+    @include btn;
 }
