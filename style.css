@@ -1,3 +1,138 @@
+
+body{ 
+    font-family: Roboto;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: "Shrikhand";
+    src: url(Fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
 img{
     width: 100%;
+}
+h1{
+    font-weight: bolder;
+}
+.fas{
+    margin: 20px;
+    color: gray;  
+}
+.location{
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: -40px;
+}
+.heading__logo{
+    font-family: "Shrikhand";
+    text-align: center;
+}
+.heading__location{
+    display: flex;
+    align-items: center;
+}
+
+.Intro{
+    text-align: center;
+}
+.Intro__heading{
+    font-weight: 100;
+}
+.Intro__button{
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50px;
+    border-color: lightgray;
+    padding: 15px;
+}
+
+.HowWorks{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.HowWorks__buttons{
+    display: flex;
+    flex-direction: column;
+}
+.HowWorks__choose{
+    background-color: #eeeeee;
+    padding: 15px;
+    border-radius: 50px;
+    border-color: #eeeeee;
+    box-shadow: 1px 1px 1px lightgray;
+    width: 90%;
+    text-align: left;
+}
+.HowWorks__create{
+    background-color: #eeeeee;
+    padding: 15px;
+    border-radius: 50px;
+    border-color: #eeeeee;
+    box-shadow: 1px 1px 1px lightgray;
+    width: 90%;
+}
+.HowWorks__enjoy{
+    background-color: #eeeeee;
+    padding: 15px;
+    border-radius: 50px;
+    border-color: #eeeeee;
+    box-shadow: 1px 1px 1px lightgray;
+    width: 90%;
+}
+
+.Rest{
+    background-color: #eeeeee;
+    padding: 20px;
+}
+.Rest__card{
+    margin: 10px;
+    border-radius: 20px;
+    background-color: white;
+    height: 275px;
+    margin: 25px 5px 25px 5px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+.Rest__card__img{
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+    object-fit: cover;
+}
+.Rest__card__name{
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-weight: bolder;
+    font-size: 19px;
+}
+.Rest__card__location{
+    padding-left: 15px;
+    margin-top: 4px;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+footer{
+    background-color: #444444;
+}
+.Footer__logo{
+    font-family: "Shrikhand";
+    color: white;
+    margin: 0px 30px 0px 30px;
+    padding-top: 30px;
+}
+.Footer__links{
+    color: white;
+    padding-bottom: 25px;
+}
+ul {
+    list-style-type: none;
+    margin-left: 30px;
+    padding: 0;
+    line-height: 35px;
 }
