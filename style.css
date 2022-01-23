@@ -1,10 +1,14 @@
 
 body{ 
-    font-family: Roboto;
+    font-family: "Roboto";
 }
 @font-face {
     font-family: "Roboto";
     src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(Fonts/Roboto/Roboto-Thin.ttf);
 }
 @font-face{
     font-family: "Shrikhand";
@@ -20,6 +24,14 @@ h1{
 .fas{
     margin: 20px;
     color: gray;  
+    font-size: 23px;
+}
+.fas:hover{
+    color: #9356DC;
+}
+.fa-map-marker-alt{
+    color: black;
+    font-size: 17px;
 }
 .location{
     background-color: #eeeeee;
@@ -28,10 +40,13 @@ h1{
     align-items: center;
     justify-content: center;
     margin-left: -40px;
+    height: 35px;
+    border-top: rgb(196, 196, 196) 3px solid;
 }
 .heading__logo{
     font-family: "Shrikhand";
     text-align: center;
+    margin-bottom: 5px;
 }
 .heading__location{
     display: flex;
@@ -40,16 +55,26 @@ h1{
 
 .Intro{
     text-align: center;
+    background-color: #eeeeee;
+    height: 250px;
+    width: 100%;
 }
 .Intro__heading{
-    font-weight: 100;
+    font-weight: 250px;
+    padding: 35px;
+    margin: 0px;
 }
 .Intro__button{
-    background-color: #9356DC;
     color: white;
     border-radius: 50px;
-    border-color: lightgray;
+    border: none;
+    box-shadow: 2px 2px 5px lightgray;
     padding: 15px;
+    background: #FF79DA;
+    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+.Intro__caption{
+    font-family: "Roboto-Thin";
 }
 
 .HowWorks{
@@ -59,11 +84,14 @@ h1{
 .HowWorks__buttons{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .HowWorks__choose{
     background-color: #eeeeee;
-    padding: 15px;
-    border-radius: 50px;
+    font-size: 17px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 20px;
+    border-radius: 30px;
     border-color: #eeeeee;
     box-shadow: 1px 1px 1px lightgray;
     width: 90%;
@@ -71,20 +99,36 @@ h1{
 }
 .HowWorks__create{
     background-color: #eeeeee;
-    padding: 15px;
-    border-radius: 50px;
+    font-size: 17px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 20px;
+    border-radius: 30px;
     border-color: #eeeeee;
     box-shadow: 1px 1px 1px lightgray;
     width: 90%;
+    text-align: left;
 }
 .HowWorks__enjoy{
     background-color: #eeeeee;
-    padding: 15px;
-    border-radius: 50px;
+    font-size: 17px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 20px;
+    border-radius: 30px;
     border-color: #eeeeee;
     box-shadow: 1px 1px 1px lightgray;
     width: 90%;
+    text-align: left;
 }
+.HowWorks__choose:hover{
+    background-color: #9256dc13;
+}
+.HowWorks__create:hover{
+    background-color: #9356DC13;
+}
+.HowWorks__enjoy:hover{
+    background-color: #9356DC13;
+}
+
 
 .Rest{
     background-color: #eeeeee;
@@ -97,11 +141,13 @@ h1{
     height: 275px;
     margin: 25px 5px 25px 5px;
     box-shadow: 2px 2px 5px lightgray;
+    max-width: 350px;
 }
 .Rest__card__img{
     border-radius: 20px 20px 0px 0px;
     height: 200px;
     object-fit: cover;
+    max-width: 350px;
 }
 .Rest__card__name{
     padding-left: 15px;
@@ -113,7 +159,7 @@ h1{
 .Rest__card__location{
     padding-left: 15px;
     margin-top: 4px;
-    font-weight: lighter;
+    font-family: "Roboto-Thin";
     font-size: 17px;
 }
 
@@ -129,6 +175,10 @@ footer{
 .Footer__links{
     color: white;
     padding-bottom: 25px;
+}
+.Footer__icon{
+    color: white;
+
 }
 ul {
     list-style-type: none;

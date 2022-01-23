@@ -1,0 +1,64 @@
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url(Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: "Shrikhand";
+    src: url(Fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+body{ 
+    font-family: "Roboto";
+}
+
+.heading__logo{
+    width: 50%;
+}
+.heading__image{
+    width: 100%;
+}
+
+.menu{
+    background-color: #eeeeee;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: -10px;
+}
+.menu__title{
+    font-family: "Shrikhand";
+}
+.menu__card{
+    background-color: white;
+    border-radius: 10px;
+    width: 85%;
+}
+
+.orderbutton{
+    color: white;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 2px 5px lightgray;
+    padding: 15px;
+    background: #FF79DA;
+    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+
+footer{
+    background-color: #444444;
+}
+.Footer__logo{
+    font-family: "Shrikhand";
+    color: white;
+    margin: 0px 30px 0px 30px;
+    padding-top: 30px;
+}
+.Footer__links{
+    color: white;
+    padding-bottom: 25px;
+}
+ul {
+    list-style-type: none;
+    margin-left: 30px;
+    padding: 0;
+    line-height: 35px;
+}
