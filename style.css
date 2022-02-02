@@ -22,9 +22,10 @@ h1{
     font-weight: bolder;
 }
 .fas{
-    margin: 20px;
+    margin: 18px;
     color: gray;  
-    font-size: 23px;
+    font-size: 18px;
+    
 }
 .fas:hover{
     color: #9356DC;
@@ -86,68 +87,69 @@ h1{
     flex-direction: column;
     justify-content: center;
 }
-.HowWorks__choose{
+.HowWorks__numbers{
+    color: white;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 20px;
+    padding: 3px 0px 3px 8px;
+    margin-left: -33px;
+    margin-top: 15px;
+}
+.HowWorks__card{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
     background-color: #eeeeee;
     font-size: 17px;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 25px 5px 25px;
     margin-bottom: 20px;
     border-radius: 30px;
     border-color: #eeeeee;
     box-shadow: 1px 1px 1px lightgray;
     width: 90%;
     text-align: left;
+    align-self: center;
+    /*height: 70px;*/
 }
-.HowWorks__create{
-    background-color: #eeeeee;
-    font-size: 17px;
-    padding: 5px 15px 5px 15px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    border-color: #eeeeee;
-    box-shadow: 1px 1px 1px lightgray;
-    width: 90%;
-    text-align: left;
-}
-.HowWorks__enjoy{
-    background-color: #eeeeee;
-    font-size: 17px;
-    padding: 5px 15px 5px 15px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    border-color: #eeeeee;
-    box-shadow: 1px 1px 1px lightgray;
-    width: 90%;
-    text-align: left;
-}
-.HowWorks__choose:hover{
+
+.HowWorks__card:hover{
     background-color: #9256dc13;
 }
-.HowWorks__create:hover{
-    background-color: #9356DC13;
-}
-.HowWorks__enjoy:hover{
-    background-color: #9356DC13;
+.HowWorks__text{
+    padding: 15px 0px 15px 0px;
+    justify-items: center;
 }
 
 
 .Rest{
     background-color: #eeeeee;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Rest__heading{
+    width: 100%;
+    margin: 25px 0px 5px 0px;
 }
 .Rest__card{
     margin: 10px;
     border-radius: 20px;
     background-color: white;
-    height: 275px;
     margin: 25px 5px 25px 5px;
     box-shadow: 2px 2px 5px lightgray;
-    max-width: 350px;
+    width: 95%;
+    /*height: 275px;
+    max-width: 350px;*/
 }
 .Rest__card__img{
     border-radius: 20px 20px 0px 0px;
-    height: 200px;
     object-fit: cover;
-    max-width: 350px;
+    width: 100%;
+    aspect-ratio: 16/8;
+    /*max-height: 200px;
+    max-width: 350px;*/
 }
 .Rest__card__name{
     padding-left: 15px;
@@ -162,6 +164,7 @@ h1{
     font-family: "Roboto-Thin";
     font-size: 17px;
 }
+
 
 footer{
     background-color: #444444;
@@ -178,7 +181,18 @@ footer{
 }
 .Footer__icon{
     color: white;
-
+    font-size: 18px;
+    margin: -10px;
+}
+.fa-utensils{
+    color: white;
+    width: 10px;
+    font-size: 16px;
+}
+.fa-hands-helping{
+    color: white;
+    width: 10px;
+    font-size: 16px;
 }
 ul {
     list-style-type: none;
